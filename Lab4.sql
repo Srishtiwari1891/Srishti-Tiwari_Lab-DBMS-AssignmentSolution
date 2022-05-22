@@ -186,4 +186,5 @@ on sp.pricing_id=o.pricing_id  group by sp.supp_id) as su on s.supp_id=su.suppid
 END $$
 DELIMITER ;
 
+-- Call SP GetSupplierRating()
 call GetSupplierRating();

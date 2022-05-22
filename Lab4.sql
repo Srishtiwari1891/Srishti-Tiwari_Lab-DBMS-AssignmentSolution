@@ -185,3 +185,5 @@ end) as Type_of_service from supplier s inner join ( select sp.supp_id as suppid
 on sp.pricing_id=o.pricing_id  group by sp.supp_id) as su on s.supp_id=su.suppid;
 END $$
 DELIMITER ;
+
+call GetSupplierRating();
